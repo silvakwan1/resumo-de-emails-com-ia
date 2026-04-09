@@ -10,7 +10,7 @@ def setup_env():
         return
 
     if os.path.exists(target):
-        confirm = input(f"O arquivo {target} já existe. Deseja sobrescrever? (s/n): ").strip().lower()
+        confirm = input(f"O arquivo {target} já existe. Deseja sobrescrever? (s/N): ").strip().lower()
         if confirm != 's':
             print("Operação cancelada.")
             return
