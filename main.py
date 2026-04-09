@@ -53,6 +53,6 @@ for i, email in enumerate(Inteirar_sobre_o_array.get_items(emails_corpos)):
     print(f"Ainda restam {restantes} emails para serem resumidos de {total_emails} total.")
     
     if restantes > 0:
-        saida = input("\nVer mais um resumo? (sim para continuar, sair para encerrar): ").strip().lower()
-        if saida == "sair":
+        saida = input("\nVer mais um resumo? s/N: ").strip().lower()
+        if saida == "s" or saida == "sim":
             break
